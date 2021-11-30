@@ -20,6 +20,7 @@ public class LoginPage {
     private static By loginHeader = By.cssSelector(".existingAccount__headline");
 
 
+
     public void validLoginInput() {
         $(emailInput).setValue(validEmail);
         $(pwdInput).setValue(validPwd);

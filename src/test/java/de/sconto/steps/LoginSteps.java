@@ -3,6 +3,9 @@ package de.sconto.steps;
 import com.codeborne.selenide.Condition;
 import de.sconto.pages.HomePage;
 import de.sconto.pages.LoginPage;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -19,6 +22,12 @@ public class LoginSteps {
 
     LoginPage loginPage;
     HomePage homePage;
+
+    @Before
+    public void initPages(){
+        homePage = page(HomePage.class);
+        loginPage =page(LoginPage.class);
+    }
 
     @When("I click on the Login icon")
     public void iClickOnLoginIcon() {

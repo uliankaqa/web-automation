@@ -26,7 +26,7 @@ public class HomePage {
     private static By acceptBtn = By.xpath("//*[@data-accept-action='all']");
     private static By banner = By.cssSelector(".consentForm__title");
     private static By loginIcon = By.cssSelector(".headerElement--login");
-    private static By carouselImg = By.cssSelector(".carouselImage");
+    private static By carouselImg = By.cssSelector("#discount_line");
 
 
     public void acceptCookies(){
