@@ -10,7 +10,7 @@ public class WishListPage {
 
     private static By title = By.tagName("h1");
     private static By wishListNames = By.className("articleFullName__name");
-    private static By removeProductBtn = By.className(".wishlistEntry__remove");
+    private static By removeProductBtn = By.className("wishlistEntry__remove");
 
 
     public SelenideElement getPageTitleElement(){
@@ -27,8 +27,8 @@ public class WishListPage {
 
 
     public void clean() {
-        while ($$(removeProductBtn).size() > 0){
+      //  while ($$(removeProductBtn).size() > 0){
             removeProduct(0);
-        }
+       // }
     }
 }
